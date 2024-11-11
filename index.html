@@ -1,12 +1,28 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourBrand</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Layout Styles */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 2rem auto;
         }
 
+        /* Card Styles */
         .feature-card {
             text-align: center;
             padding: 2rem;
@@ -21,6 +37,7 @@
             margin-bottom: 1rem;
         }
 
+        /* Responsive Styles */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -33,6 +50,7 @@
     </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header class="header">
         <nav>
             <div class="logo">YourBrand</div>
@@ -49,6 +67,7 @@
         </div>
     </header>
 
+    <!-- Features Section -->
     <section class="features" id="features">
         <h2>Our Features</h2>
         <div class="features-grid">
